@@ -1,0 +1,474 @@
+.editor-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+.editor-content p {
+    font-weight: bold;
+}
+
+.editor-content h1,
+.editor-content h2,
+.editor-content h3 {
+    font-weight: bolder;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+.editor-content h1 {
+    font-size: 2.4em;
+}
+
+.editor-content h2 {
+    font-size: 1.75em;
+}
+
+.editor-content h3 {
+    font-size: 1.4em;
+}
+
+.editor-content ul,
+.editor-content ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.editor-content ul {
+    list-style-type: disc;
+}
+
+.editor-content ol {
+    list-style-type: decimal;
+}
+
+.editor-content li {
+    margin-bottom: 0.4em;
+    list-style-position: outside;
+}
+
+.editor-content ul li {
+    list-style-type: disc;
+}
+
+.editor-content ol li {
+    list-style-type: decimal;
+}
+
+.editor-content a {
+    color: #2563eb;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.editor-content blockquote {
+    border-left: 4px solid #d1d5db;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #6b7280;
+    background-color: #f9fafb;
+    font-style: italic;
+}
+
+.editor-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 6px;
+}
+
+.editor-content pre,
+.editor-content code {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', Menlo, Consolas, 'Courier New', monospace;
+}
+
+.editor-content pre {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    white-space: pre;
+    position: relative;
+}
+
+.editor-content .editor-code-block {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    position: relative;
+}
+
+.editor-content .editor-code-block code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+    white-space: pre;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure code blocks in the editor don't have overlapping elements */
+.editor-content pre::before,
+.editor-content .editor-code-block::before {
+    display: none !important;
+}
+
+/* Additional fix for Lexical editor code blocks */
+[data-lexical-editor] .EditorTheme__code {
+    padding: 16px !important;
+    position: relative;
+    white-space: pre-wrap !important;
+    /* Preserve formatting but allow wrapping */
+    tab-size: 2 !important;
+}
+
+[data-lexical-editor] .EditorTheme__code::before {
+    display: none !important;
+}
+
+.editor-content hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2em 0;
+}
+
+/* Table Styles */
+.editor-content .editor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.editor-content .editor-table th,
+.editor-content .editor-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+.editor-content .editor-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #d1d5db;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.editor-content .editor-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.editor-content .editor-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternating row colors for better readability */
+.editor-content .editor-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.editor-content .editor-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Mobile responsive tables */
+@media (max-width: 640px) {
+    .editor-content .editor-table {
+        font-size: 0.875rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .editor-content .editor-table th,
+    .editor-content .editor-table td {
+        padding: 8px 12px;
+        min-width: 120px;
+    }
+}
+
+/* Table wrapper for better scrolling on mobile */
+.editor-content .editor-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.editor-content .editor-table th,
+.editor-content .editor-table td {
+    white-space: normal;
+}
+
+/* Enhanced Code Block Styles - Clean version without borders */
+.editor-content .code-block-wrapper {
+    margin: 1.5em 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    /* Remove border */
+    background: #f8fafc;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', Menlo, Consolas, 'Courier New', monospace;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow instead */
+}
+
+.editor-content .code-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.75rem;
+    color: #64748b;
+    /* Ensure header doesn't interfere with button clicks */
+    position: relative;
+    z-index: 1;
+}
+
+.editor-content .code-block-wrapper pre {
+    margin: 0;
+    padding: 16px;
+    background: #f8fafc;
+    border: none;
+    /* Remove border */
+    border-radius: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    position: relative;
+    white-space: pre-wrap;
+    tab-size: 2;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.editor-content .code-block-wrapper code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+    line-height: inherit;
+    white-space: pre-wrap;
+    display: block;
+    tab-size: 2;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+/* Ensure Lexical editor code blocks have clean styling */
+[data-lexical-editor] .EditorTheme__code {
+    padding: 16px !important;
+    position: relative;
+    white-space: pre-wrap !important;
+    tab-size: 2 !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    background-color: #f6f8fa !important;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', Menlo, Consolas, monospace !important;
+    border: none !important;
+    /* Remove border */
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    overflow: auto;
+    max-width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    /* Add subtle shadow */
+}
+
+/* High-quality PrismJS Token Styles - clean colors */
+.editor-content .token.comment,
+.editor-content .token.prolog,
+.editor-content .token.doctype,
+.editor-content .token.cdata {
+    color: #708090;
+    font-style: italic;
+}
+
+.editor-content .token.punctuation {
+    color: #999999;
+}
+
+.editor-content .token.namespace {
+    opacity: 0.7;
+}
+
+.editor-content .token.property,
+.editor-content .token.tag,
+.editor-content .token.boolean,
+.editor-content .token.number,
+.editor-content .token.constant,
+.editor-content .token.symbol,
+.editor-content .token.deleted {
+    color: #905;
+}
+
+.editor-content .token.selector,
+.editor-content .token.attr-name,
+.editor-content .token.string,
+.editor-content .token.char,
+.editor-content .token.builtin,
+.editor-content .token.inserted {
+    color: #690;
+}
+
+.editor-content .token.operator,
+.editor-content .token.entity,
+.editor-content .token.url,
+.editor-content .language-css .token.string,
+.editor-content .style .token.string {
+    color: #9a6e3a;
+}
+
+.editor-content .token.atrule,
+.editor-content .token.attr-value,
+.editor-content .token.keyword {
+    color: #07a;
+    font-weight: bold;
+}
+
+.editor-content .token.function,
+.editor-content .token.class-name {
+    color: #dd4a68;
+    font-weight: bold;
+}
+
+.editor-content .token.regex,
+.editor-content .token.important,
+.editor-content .token.variable {
+    color: #e90;
+}
+
+.editor-content .token.important,
+.editor-content .token.bold {
+    font-weight: bold;
+}
+
+.editor-content .token.italic {
+    font-style: italic;
+}
+
+.editor-content .token.entity {
+    cursor: help;
+}
+
+/* Lexical specific highlighting classes for better integration */
+.editor-content .token.literal-property {
+    color: #0451a5;
+}
+
+.editor-content .token.parameter {
+    color: #001080;
+}
+
+/* Dark mode support - clean without borders */
+@media (prefers-color-scheme: dark) {
+    .editor-content .code-block-wrapper {
+        background: #1e293b;
+        border: none;
+        /* Remove border in dark mode too */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .editor-content .code-block-header {
+        background: #0f172a;
+        border-bottom: 1px solid #334155;
+        color: #94a3b8;
+    }
+
+    .editor-content .code-block-wrapper pre {
+        background: #1e293b;
+        color: #e2e8f0;
+        border: none;
+        /* Remove border */
+    }
+
+    [data-lexical-editor] .EditorTheme__code {
+        background-color: #0d1117 !important;
+        border: none !important;
+        /* Remove border */
+        color: #f0f6fc !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    /* Dark mode token colors */
+    .editor-content .token.comment,
+    .editor-content .token.prolog,
+    .editor-content .token.doctype,
+    .editor-content .token.cdata {
+        color: #8b949e;
+    }
+
+    .editor-content .token.punctuation {
+        color: #c9d1d9;
+    }
+
+    .editor-content .token.property,
+    .editor-content .token.tag,
+    .editor-content .token.boolean,
+    .editor-content .token.number,
+    .editor-content .token.constant,
+    .editor-content .token.symbol,
+    .editor-content .token.deleted {
+        color: #79c0ff;
+    }
+
+    .editor-content .token.selector,
+    .editor-content .token.attr-name,
+    .editor-content .token.string,
+    .editor-content .token.char,
+    .editor-content .token.builtin,
+    .editor-content .token.inserted {
+        color: #a5d6ff;
+    }
+
+    .editor-content .token.operator,
+    .editor-content .token.entity,
+    .editor-content .token.url {
+        color: #ff7b72;
+    }
+
+    .editor-content .token.atrule,
+    .editor-content .token.attr-value,
+    .editor-content .token.keyword {
+        color: #ff7b72;
+        font-weight: bold;
+    }
+
+    .editor-content .token.function,
+    .editor-content .token.class-name {
+        color: #d2a8ff;
+        font-weight: bold;
+    }
+
+    .editor-content .token.literal-property {
+        color: #79c0ff;
+    }
+
+    .editor-content .token.parameter {
+        color: #ffa657;
+    }
+}

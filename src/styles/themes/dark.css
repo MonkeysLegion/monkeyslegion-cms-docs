@@ -1,0 +1,51 @@
+.dark {
+    /* Primary colors */
+    --primary: rgba(234, 138, 10, 1);
+    --primary-bold: rgba(209, 120, 4, 1);
+    --primary-bold-80: rgba(209, 120, 4, 0.8);
+    --primary-80: rgba(234, 138, 10, 0.8);
+    --primary-foreground: rgba(250, 250, 249, 1);
+
+    /* Sidebar colors */
+    --sidebar: rgba(0, 0, 0, 1);
+    --sidebar-80: rgba(0, 0, 0, 0.8);
+    --sidebar-foreground: rgba(250, 250, 249, 1);
+    --sidebar-accent: rgba(31, 41, 55, 1);
+    --sidebar-accent-80: rgba(31, 41, 55, 0.8);
+    --sidebar-accent-foreground: rgba(250, 250, 249, 1);
+    --sidebar-border: rgba(234, 138, 10, 1);
+
+    /* Card and accent */
+    --card-bg: rgba(31, 41, 55, 1);
+    --accent: rgba(234, 138, 10, 1);
+
+    /* Status colors */
+    --success: rgba(234, 138, 10, 1);
+    --warning: rgba(209, 120, 4, 1);
+    --danger: rgba(239, 68, 68, 1);
+
+    /* Base colors from globals.css */
+    --background: oklch(0.05 0 0);
+    --foreground: oklch(0.98 0 0);
+    --card: oklch(0.12 0 0);
+    --card-foreground: oklch(0.98 0 0);
+    --popover: oklch(0.15 0 0);
+    --popover-foreground: oklch(0.98 0 0);
+    --secondary: oklch(0.15 0 0);
+    --secondary-foreground: oklch(0.98 0 0);
+    --muted: oklch(0.15 0 0);
+    --muted-foreground: oklch(0.65 0 0);
+    --accent-foreground: oklch(0.05 0 0);
+    --destructive: oklch(0.65 0.25 30);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.65 0.25 35);
+    --chart-1: oklch(0.65 0.25 35);
+    --chart-2: oklch(0.6 0.2 40);
+    --chart-3: oklch(0.55 0.15 45);
+    --chart-4: oklch(0.7 0.22 38);
+    --chart-5: oklch(0.62 0.18 42);
+    --sidebar-primary: oklch(0.65 0.25 35);
+    --sidebar-primary-foreground: oklch(0.98 0 0);
+    --sidebar-ring: oklch(0.65 0.25 35);
+}

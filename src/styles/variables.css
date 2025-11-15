@@ -1,0 +1,10 @@
+:root {
+    /* Layout */
+    --font-sans: var(--font-inter);
+    --header-height: calc(var(--spacing) * 12 + 1px);
+    --radius: 0.625rem;
+
+    /* Brand colors */
+    --main-light: #ea8a0a;
+    --main-bold: #000000;
+}

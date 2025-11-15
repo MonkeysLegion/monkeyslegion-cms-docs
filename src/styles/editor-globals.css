@@ -1,0 +1,106 @@
+/* Editor paragraph spacing fixes */
+.editor-paragraph {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4 !important;
+}
+
+.editor-paragraph+.editor-paragraph {
+    margin-top: 0.5em !important;
+}
+
+.editor-text {
+    line-height: 1.4 !important;
+}
+
+/* Lexical editor content area spacing */
+[data-lexical-editor] p {
+    margin: 0 !important;
+    line-height: 1.4 !important;
+}
+
+[data-lexical-editor] p+p {
+    margin-top: 0.5em !important;
+}
+
+/* Editor content wrapper */
+.lexical-content-editable {
+    line-height: 1.4 !important;
+}
+
+.lexical-content-editable p {
+    margin: 0 !important;
+    line-height: 1.4 !important;
+}
+
+.lexical-content-editable p+p {
+    margin-top: 0.5em !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Text editor content display */
+.text-editor-content p {
+    margin: 0 0 0.5em 0 !important;
+    line-height: 1.5 !important;
+}
+
+.text-editor-content p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.text-editor-content h1,
+.text-editor-content h2,
+.text-editor-content h3,
+.text-editor-content h4,
+.text-editor-content h5,
+.text-editor-content h6 {
+    margin: 1em 0 0.5em 0 !important;
+    font-weight: 600 !important;
+}
+
+.text-editor-content h1:first-child,
+.text-editor-content h2:first-child,
+.text-editor-content h3:first-child,
+.text-editor-content h4:first-child,
+.text-editor-content h5:first-child,
+.text-editor-content h6:first-child {
+    margin-top: 0 !important;
+}
+
+.text-editor-content strong {
+    font-weight: 600 !important;
+}
+
+.text-editor-content em {
+    font-style: italic !important;
+}
+
+.text-editor-content ul,
+.text-editor-content ol {
+    margin: 0.5em 0 !important;
+    padding-left: 1.5em !important;
+}
+
+.text-editor-content li {
+    margin: 0.25em 0 !important;
+    line-height: 1.5 !important;
+    list-style-position: outside !important;
+}
+
+.text-editor-content ul li {
+    list-style-type: disc !important;
+}
+
+.text-editor-content ol li {
+    list-style-type: decimal !important;
+}
+
+.text-editor-content blockquote {
+    border-left: 4px solid #e5e7eb !important;
+    padding-left: 1em !important;
+    margin: 1em 0 !important;
+    font-style: italic !important;
+}
