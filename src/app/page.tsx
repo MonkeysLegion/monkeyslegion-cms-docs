@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(234,138,10,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(234,138,10,.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_at_center,#000,transparent)]" />
 
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl bg-gradient-to-r from-slate-900 via-primary to-orange-dark bg-clip-text text-transparent">
+          <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl text-primary">
             Powerful Content Management Made Simple
           </h1>
 

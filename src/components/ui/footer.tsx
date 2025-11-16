@@ -29,7 +29,9 @@ const Footer = ({ className = "" }) => {
               Documentation
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/MonkeysLegion/monkeyslegion-cms-docs/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm hover:text-foreground transition-colors text-muted-foreground"
             >
               GitHub
