@@ -7,6 +7,13 @@ const Footer = ({ className = "" }) => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col items-center md:items-start gap-2">
+            <Image
+              src="/monkeyscms.svg"
+              alt="Monkeys Legion CMS"
+              width={120}
+              height={26}
+              className="h-5 w-auto text-foreground"
+            />
             <p className="text-sm text-muted-foreground">
               © 2025 Monkeys Legion CMS. All rights reserved.
             </p>
@@ -14,7 +21,7 @@ const Footer = ({ className = "" }) => {
               <span className="text-xs text-muted-foreground">Powered by</span>
               <Image
                 src="/MonkeysLegion.svg"
-                alt="MonkeysLegion"
+                alt="MonkeysCms"
                 width={120}
                 height={24}
                 className="h-5 w-auto text-foreground"

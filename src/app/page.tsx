@@ -15,7 +15,14 @@ export default function HomePage() {
       <nav className="sticky top-0 z-100 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-16 items-center justify-between px-4 max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold">Monkeys Legion CMS</span>
+            <Image
+              src="/monkeyscms.svg"
+              alt="Monkeys Legion CMS"
+              width={120}
+              height={26}
+              className="h-8 w-auto text-foreground"
+            />
+            {/* <span className="text-xl font-bold">Monkeys Legion CMS</span> */}
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
@@ -45,7 +52,7 @@ export default function HomePage() {
             <span className="text-sm text-muted-foreground">Powered by</span>
             <Image
               src="/MonkeysLegion.svg"
-              alt="MonkeysLegion"
+              alt="MonkeysCms"
               width={150}
               height={30}
               className="h-6 w-auto"

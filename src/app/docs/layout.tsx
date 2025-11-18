@@ -14,7 +14,7 @@ function DocsLayout({ children }: { children: ReactNode }) {
     return (
         <div className="flex min-h-screen w-full bg-background">
             <NavigationSidebar
-                logoSrc="/MonkeysLegion.svg"
+                logoSrc="/monkeyscms.svg"
                 logoAlt="Monkeys Legion CMS"
                 logoWidth={180}
                 logoHeight={180}
